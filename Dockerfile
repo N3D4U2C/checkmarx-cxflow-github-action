@@ -9,9 +9,9 @@ RUN apk add --no-cache bash curl && \
     chmod 0755 /usr/local/bin/sbt
 
 #SCA Resolver Logs
-RUN mkdir -p /app/scar
-COPY ScaResolver /app/scar/ScaResolver
-RUN chmod +x /app/scar/ScaResolver
+RUN mkdir -p /scar
+COPY ScaResolver.sh /scar/ScaResolver.sh
+RUN ls -l /scar && chmod +x /scar/ScaResolver.sh
 
 #Copy the entrypoint script and properties used for the action
 COPY entrypoint.sh /app/entrypoint.sh
