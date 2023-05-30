@@ -10,6 +10,7 @@ RUN apk add --no-cache bash curl && \
 
 #Copy the entrypoint script and properties used for the action
 COPY entrypoint.sh /app/entrypoint.sh
+COPY Configuration.yml /app/Configuration.yml
 
 #Make it executable
 RUN chmod +x /app/entrypoint.sh
