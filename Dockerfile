@@ -8,6 +8,9 @@ RUN apk add --no-cache bash curl && \
     ln -s /usr/local/sbt/bin/sbt /usr/local/bin/sbt && \
     chmod 0755 /usr/local/bin/sbt
 
+RUN ls -l /app
+RUN grep "LogLevel" /app/Configuration.yml
+
 #SCA Resolver Logs
 #RUN mkdir /scar
 COPY Configuration.yml /app/Configuration.yml
@@ -17,7 +20,7 @@ COPY Configuration.yml /app/Configuration.yml
 COPY entrypoint.sh /app/entrypoint.sh
 
 RUN ls -l /app
-RUN cat /app/Configuration.yml
+RUN grep "LogLevel" /app/Configuration.yml
 
 #Make it executable
 RUN chmod +x /app/entrypoint.sh
