@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "SCA Resolver"
-/app/ScaResolver $@
+/app/ScaResolver --log-level=Verbose $@
 
 
