@@ -3,5 +3,6 @@ echo "SCA Resolver bash script"
 echo $@
 echo "/app: " ls -l /apps
 /app/ScaResolver $@
+ls -l /app
 
 
