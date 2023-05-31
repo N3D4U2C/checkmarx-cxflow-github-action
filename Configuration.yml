@@ -20,7 +20,7 @@ ScaAppUrl: https://sca.checkmarx.net
 #OldResultsThresholdMinutes: 144000
 #EngineResultsSendTimeOutMinutes: 2
 #EngineResultsReceiveTimeOutMinutes: 15
-LogLevel: Information
+LogLevel: Verbose
 #ScanReportWaitForFinishDelayInSeconds: 5
 #ScanReportMaxRetries: 2147483647
 #PythonVersion: V2
