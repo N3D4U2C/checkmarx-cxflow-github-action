@@ -1,5 +1,5 @@
 #!/bin/bash
-exec 1> >(tee /tmp/log.cx)  2>&1
-/app/ScaResolver "$@"
 echo "SCA Resolver"
+/app/ScaResolver $@
+
 
