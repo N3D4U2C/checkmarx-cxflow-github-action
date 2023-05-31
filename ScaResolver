@@ -1,3 +1,5 @@
 #!/bin/bash
-echo "$@ = " $@ 
-/app/ScaResolver "$@" --log-level=Debug
+exec 1> >(tee /tmp/log.cx)  2>&1
+/app/ScaResolver "$@"
+echo "SCA Resolver"
+
