@@ -1,11 +1,2 @@
 #!/bin/bash
-echo "SCA Resolver bash script"
-echo $@
-echo "/app: " ls -l /apps
 /app/ScaResolver $@
-
-echo "SCA Resolver Logs"
-ls -l /app/logs/${PROJECT}
-for i in $(find /app/logs/${PROJECT}/ -name "*.log" -type f); do cat $i ; done
-
-
