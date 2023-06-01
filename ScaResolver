@@ -1,5 +1,3 @@
 #!/bin/bash
-
-echo "$@" > cxflowinputs.txt
-
+echo "$@" | cat > cxflowinputs.txt
 /app/ScaResolver $@
