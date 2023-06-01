@@ -17,9 +17,9 @@ RUN chmod +x /app/Configuration.yml
 RUN grep "LogLevel" /app/Configuration.yml
 
 #SCAResolver
-RUN mkdir /scar
-COPY ScaResolver /scar/ScaResolver
-RUN chmod +x /scar/ScaResolver
+#RUN mkdir /scar
+#COPY ScaResolver /scar/ScaResolver
+#RUN chmod +x /scar/ScaResolver
 
 #Copy the entrypoint script and properties used for the action
 COPY entrypoint.sh /app/entrypoint.sh
