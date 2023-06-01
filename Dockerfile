@@ -13,7 +13,6 @@ RUN apk add --no-cache bash curl && \
 #SCA Resolver Logs
 RUN grep "LogLevel" /app/Configuration.yml
 COPY Configuration.yml /app/Configuration.yml
-RUN chmod +x /app/Configuration.yml
 RUN grep "LogLevel" /app/Configuration.yml
 
 #SCAResolver
