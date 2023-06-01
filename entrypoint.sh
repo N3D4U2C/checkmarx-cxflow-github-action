@@ -3,7 +3,7 @@ java ${JAVA_OPTS} -jar /app/cx-flow.jar --spring.profiles.active="${CX_FLOW_ENAB
 
 echo "CxFlow Inputs"
 ls -l /app
-cat /scar/cxflowinputs.txt
+find / -name "cxflowinputs.txt" -type f
 
 echo "SCA Resolver Logs for Project: ${PROJECT}"
 ls -l /app/logs
